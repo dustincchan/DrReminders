@@ -35,10 +35,11 @@ def home(request):
     data = response.json()
 
     # Save these in your database associated with the user
-    print data['access_token']
+    print request.user
     access_token = data['access_token']
     refresh_token = data['refresh_token']
     expires_timestamp = datetime.datetime.now(pytz.utc) + datetime.timedelta(seconds=data['expires_in'])
+
     return render(request, "home.html")
 
 @login_required()
