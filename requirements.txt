@@ -6,3 +6,4 @@ whitenoise==2.0.6
 django-oauth-toolkit
 django-cors-headers
 requests
+pytz
