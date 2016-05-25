@@ -12,4 +12,5 @@ urlpatterns = [
     url(r'^api/hello', ApiEndpoint.as_view()),  # and also a resource server!
     url(r'^secret$', 'DrReminders.views.secret_page', name='secret'),
     url(r'^login$', 'DrReminders.views.login', name='login'),
+    url(r'^home$', 'DrReminders.views.home', name='home'),
 ]
